@@ -1,0 +1,60 @@
+~
+ssh-keygen
+cat $HOME/.ssh/*.pub
+cd
+mkdir repogit 
+git clone git@github.com:aleexcm/TP_AySO.git
+cd TP_AySO/
+ls -l
+cat /etc/os-release
+man grep
+grep HOME_URL /etc/os-release
+grep home_url /etc/os-release
+grep -i Home_url /etc/os-release
+whoami
+echo “Usuario=$(whoami)” > datos_usuario.txt
+git add .
+git config --global user.email "alexanderbarrero19@gmail.com"
+git config --global user.name "aleexcm"
+git commit -m "ADD: agregado 1er ejercicio
+
+
+"
+git status
+grep "model name" /proc/cpuinfo | head -n 1 >> /etc/os-releas
+sudo bash -c 'grep "model name" /proc/cpuinfo | head -n 1 >> /etc/os-release'
+sudo git add /etc/os-release
+sudo git commit -m "feat: Añadiendo información de CPU"
+git config --global user.name "aleexcm"
+git config --global user.email "alexanderbarrero19@gmail.com"
+sudo git add /etc/os-release
+sudo git commit -m "feat: Añadiendo información de CPU"
+git config user.name "aleexcm"
+git config user.email "alexanderbarrero19@gmail.com"
+sudo git add /etc/os-release
+sudo cp /etc/os-release /home/vagrant/TP_AySO/os-release
+sudo bash -c 'grep "model name" /proc/cpuinfo | head -n 1 >> /home/vagrant/TP_AySO/os-release'
+cd /home/vagrant/TP_AySO
+git add os-release
+git commit -m "feat: Añadiendo información de CPU"
+sudo bash -c 'grep "model name" /proc/cpuinfo | head -n 1 >> /etc/os-release'
+sudo bash -c 'grep "model name" /proc/cpuinfo | head -n 1 > /home/vagrant/TP_AySO/cpu_info.txt'
+cd /home/vagrant/TP_AySO
+git add cpu_info.txt
+git commit -m "feat: Añadiendo información de CPU"
+cd /home/vagrant/TP_AySO
+git add lista_ordenada
+git commit -m "ADD: Listado de usuarios ordenada"
+echo "tcpdump" > comando_dump_net
+echo "tcpdump -i any" >> comando_dump_net
+git add comando_dump_net
+git commit -m "ADD: Comando para Capturar y analizar el tráfico de red"
+cat <<EOF >> README.md
+Alumno: Alexander Barrero
+División: 315
+Turno: TN
+EOF
+
+git add README.md
+git commit -m "docs: Agregar información del alumno"
+history -a
